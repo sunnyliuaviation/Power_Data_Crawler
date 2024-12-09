@@ -55,7 +55,7 @@ for img in number_images:
 
 print(f"提取的數字: {number_str}")
 ```
-#### 5. 完整程式碼
+#### 5. 主要程式碼
 ```py
 import requests
 from bs4 import BeautifulSoup
@@ -102,7 +102,11 @@ number = fetch_number_from_page(url)
 if number:
     print(f"提取的即時電力數據: {number}")
 ```
+## 完整程式碼  
+最一開始製作的版本較簡單，是[將資料儲存至 Excel 版本](https://github.com/sunnyliuaviation/Power_Data_Crawler/blob/main/Power_Data_Crawler(Excel).py)，後來因為需要將數據共用給組員，而 Google 又可以串接 Google Sheet API 將資料存至雲端，於是經過一些修改，製作出[將資料儲存至 Google Sheet 版本](https://github.com/sunnyliuaviation/Power_Data_Crawler/blob/main/Power_Data_Crawler(Google_Sheet).py)，而因為 Google Sheet 版本的程式碼中包含敏感資訊(如: API 金鑰等)，所以放在這裡的程式碼有用文字取代。擷取下來的資料存放在[Power_Data](https://docs.google.com/spreadsheets/d/1u8VnMmEu7nNLv_Kc-UJ2HcpSGqA3TzVb2GhmV_YmOEs/edit?gid=0#gid=0)。
 ## 參考資料
 * [【 Python 爬蟲 】2 小時初學者課程 ：一次學會 PTT 爬蟲、Hahow 爬蟲、Yahoo 電影爬蟲！](https://youtu.be/1PHp1prsxIM?si=YkFFE6DzUZQ8oPwH)  
 * [【python】selenium 網頁自動化、網路爬蟲 ｜ 爬蟲 ｜ python 爬蟲 ｜ 自動化 ｜pycharm ｜](https://youtu.be/ximjGyZ93YQ?si=_wYaRLTHsVZJkxzn)  
+* [將爬回來的結果存到excel中](https://ithelp.ithome.com.tw/articles/10327984)
+* [【Python爬蟲教學】解析如何串接Google Sheet試算表寫入爬取的資料](https://www.learncodewithmike.com/2020/08/python-write-to-google-sheet.html)
   
